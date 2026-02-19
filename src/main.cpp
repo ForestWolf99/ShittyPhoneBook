@@ -152,8 +152,8 @@ int main() {
 
         if (adding_contact) {
             if (nk_begin(ctx, "Add Contact", nk_rect(50, 50, 300, 200),
-                 NK_WINDOW_BORDER|NK_WINDOW_MOVABLE|NK_WINDOW_CLOSABLE|NK_WINDOW_TITLE))
-            {
+                 NK_WINDOW_BORDER|NK_WINDOW_MOVABLE|NK_WINDOW_TITLE))
+                {
                 nk_layout_row_static(ctx, 30, 120, 2);
                 nk_label(ctx, "Name", NK_TEXT_LEFT);
                 nk_edit_string(ctx, NK_EDIT_FIELD, name_buffer, &len2, 64, nk_filter_default);
