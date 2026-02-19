@@ -18,7 +18,7 @@
 #include "nuklear.h"
 #include "nuklear_glfw_gl3.h"
 
-int WINDOW_WIDTH = 190;
+int WINDOW_WIDTH = 400;
 int WINDOW_HEIGHT = 320;
 
 #define MAX_VERTEX_BUFFER 512 * 1024
