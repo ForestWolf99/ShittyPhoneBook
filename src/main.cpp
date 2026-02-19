@@ -165,8 +165,8 @@ int main() {
                 nk_layout_row_dynamic(ctx, 30, 2);
                 if (nk_button_label(ctx, "Cancel")) {
                     adding_contact = false;
-                    fill(begin(name_buffer), end(name_buffer), ' ');
-                    fill(begin(number_buffer), end(number_buffer), ' ');
+                    fill(begin(name_buffer), end(name_buffer), '\0');
+                    fill(begin(number_buffer), end(number_buffer), '\0');
                     len2 = 0;
                     len3 = 0;
                 }
